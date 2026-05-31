@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabinet Avocat Petrescu Angela-Mihaela | Deva</title>
+  <meta name="description" content="Cabinet de Avocat Petrescu Angela-Mihaela, Barou Hunedoara, Deva. Consultații juridice în drept civil, penal, familiei, drept societar și contencios administrativ.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--gold:#B8922A;--gold-light:#D4AB4E;--dark:#1A1A2E;--dark2:#16213E;--cream:#F9F6EE;--text:#2C2C2C;--muted:#666;--border:#E0D8C8;}
+    html{scroll-behavior:smooth}
+    body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);font-size:15px;line-height:1.7}
+    .site-wrap{max-width:960px;margin:0 auto;background:#fff;box-shadow:0 0 60px rgba(0,0,0,0.08)}
+    nav{background:var(--dark);padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+    .nav-logo{font-family:'Playfair Display',serif;color:var(--gold-light);font-size:1rem;letter-spacing:0.05em}
+    .nav-links{display:flex;gap:1.2rem;flex-wrap:wrap}
+    .nav-links a{color:#ccc;text-decoration:none;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;font-weight:400;transition:color 0.2s}
+    .nav-links a:hover{color:var(--gold-light)}
+    .hero{background:linear-gradient(135deg,var(--dark) 0%,var(--dark2) 100%);padding:5rem 3rem 4rem;text-align:center;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background-image:repeating-linear-gradient(45deg,transparent,transparent 60px,rgba(184,146,42,0.03) 60px,rgba(184,146,42,0.03) 61px);pointer-events:none}
+    .hero-badge{display:inline-block;border:1px solid var(--gold);color:var(--gold-light);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;padding:6px 18px;margin-bottom:1.5rem}
+    .hero h1{font-family:'Playfair Display',serif;color:#fff;font-size:2.8rem;line-height:1.2;margin-bottom:0.5rem;font-weight:400}
+    .hero h1 em{color:var(--gold-light);font-style:italic}
+    .hero-bar{width:50px;height:2px;background:var(--gold);margin:1.5rem auto;opacity:0.7}
+    .hero-desc{color:#ccc;font-size:0.95rem;max-width:560px;margin:0 auto 2.5rem;font-weight:300}
+    .btn-gold{display:inline-block;background:var(--gold);color:#fff;padding:14px 36px;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;font-family:'Lato',sans-serif;font-weight:700;cursor:pointer;border:none;transition:background 0.2s}
+    .btn-gold:hover{background:var(--gold-light)}
+    .btn-outline{display:inline-block;border:1px solid var(--gold);color:var(--gold-light);padding:13px 32px;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;font-family:'Lato',sans-serif;cursor:pointer;background:transparent;transition:all 0.2s;margin-left:12px}
+    .btn-outline:hover{background:var(--gold);color:#fff}
+    section{padding:3.5rem 3rem}
+    section.alt{background:var(--cream)}
+    .section-badge{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:0.75rem}
+    .section-title{font-family:'Playfair Display',serif;font-size:2rem;color:var(--dark);margin-bottom:0.5rem;font-weight:400}
+    .section-bar{width:40px;height:2px;background:var(--gold);margin:1rem 0 1.5rem}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1.25rem;margin-top:2rem}
+    .service-card{background:#fff;border:1px solid var(--border);padding:1.5rem;position:relative}
+    .service-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--gold)}
+    .service-icon{font-size:1.5rem;margin-bottom:0.6rem}
+    .service-card h3{font-family:'Playfair Display',serif;font-size:1rem;color:var(--dark);margin-bottom:0.4rem;font-weight:600}
+    .service-card p{font-size:13px;color:var(--muted);line-height:1.5}
+    .oferta-box{background:var(--dark);padding:3rem;text-align:center}
+    .oferta-box h3{font-family:'Playfair Display',serif;color:#fff;font-size:1.6rem;margin-bottom:0.75rem;font-weight:400}
+    .oferta-box p{color:#aaa;font-size:14px;max-width:500px;margin:0 auto 2rem}
+    .acte-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:2rem}
+    .act-card{background:#fff;border:1px solid var(--border);padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+    .act-info{flex:1}
+    .act-title{font-size:14px;font-weight:700;color:var(--dark);margin-bottom:3px}
+    .act-desc{font-size:12px;color:var(--muted)}
+    .act-btn{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:8px 14px;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;font-family:'Lato',sans-serif;font-weight:700;white-space:nowrap;transition:all 0.2s;text-decoration:none;display:inline-block}
+    .act-btn:hover{background:var(--gold);color:#fff}
+    .articole-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:2rem}
+    .articol-card{background:#fff;border:1px solid var(--border);padding:1.75rem;cursor:pointer;transition:box-shadow 0.2s}
+    .articol-card:hover{box-shadow:0 4px 20px rgba(0,0,0,0.08)}
+    .articol-cat{font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:0.5rem}
+    .articol-card h3{font-family:'Playfair Display',serif;font-size:1rem;color:var(--dark);margin-bottom:0.6rem;font-weight:600;line-height:1.4}
+    .articol-card p{font-size:13px;color:var(--muted);line-height:1.6}
+    .articol-more{font-size:12px;color:var(--gold);font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-top:0.75rem;display:inline-block}
+    .art-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:998;align-items:flex-start;justify-content:center;padding:2rem 1rem;overflow-y:auto}
+    .art-overlay.active{display:flex}
+    .art-modal{background:#fff;max-width:680px;width:100%;padding:2.5rem;margin:auto;position:relative}
+    .art-close{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--muted)}
+    .art-modal h2{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--dark);margin-bottom:0.5rem;font-weight:400}
+    .art-modal .art-cat{font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1rem}
+    .art-modal .art-bar{width:40px;height:2px;background:var(--gold);margin-bottom:1.5rem}
+    .art-modal p{font-size:14px;color:var(--text);line-height:1.8;margin-bottom:1rem}
+    .art-modal h4{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--dark);margin:1.25rem 0 0.5rem}
+    .art-modal ul{padding-left:1.5rem;font-size:14px;color:var(--text);line-height:1.8;margin-bottom:1rem}
+    .art-disclaimer{background:var(--cream);border-left:3px solid var(--gold);padding:1rem;font-size:12px;color:var(--muted);margin-top:1.5rem;font-style:italic}
+    .reguli-list{list-style:none;margin-top:1.5rem}
+    .reguli-list li{display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--border);align-items:flex-start;font-size:14px}
+    .reguli-list li:last-child{border-bottom:none}
+    .regula-nr{background:var(--gold);color:#fff;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;margin-top:2px}
+    .form-section{background:var(--dark)!important;padding:3.5rem 3rem}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.75rem}
+    .form-group{display:flex;flex-direction:column;gap:5px}
+    .form-group.full{grid-column:1/-1}
+    .form-group label{font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#aaa;font-weight:700}
+    .form-group input,.form-group select,.form-group textarea{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);color:#fff;padding:11px 14px;font-size:14px;font-family:'Lato',sans-serif;outline:none;transition:border-color 0.2s}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold)}
+    .form-group input::placeholder,.form-group textarea::placeholder{color:#666}
+    .form-group select option{background:var(--dark2);color:#fff}
+    .form-submit{margin-top:1.5rem;text-align:center}
+    .form-note{font-size:12px;color:#777;margin-top:1rem;font-style:italic}
+    .gdpr-check{display:flex;align-items:flex-start;gap:10px;margin-top:1rem}
+    .gdpr-check input{width:16px;height:16px;margin-top:3px;flex-shrink:0;accent-color:var(--gold)}
+    .gdpr-check label{font-size:12px;color:#aaa;line-height:1.5}
+    .gdpr-check a{color:var(--gold-light);cursor:pointer}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:1.5rem;align-items:start}
+    .contact-item{display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--border)}
+    .contact-item:last-child{border-bottom:none}
+    .contact-icon{font-size:1.1rem;width:22px;flex-shrink:0;margin-top:3px}
+    .contact-label{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:3px}
+    .contact-val{font-size:14px;color:var(--text)}
+    .contact-val a{color:var(--text);text-decoration:none}
+    .whatsapp-btn{display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;padding:14px 24px;text-decoration:none;font-weight:700;font-size:14px;margin-top:1.25rem;transition:background 0.2s}
+    .whatsapp-btn:hover{background:#1ebe5a}
+    .program-table{width:100%;font-size:13px;border-collapse:collapse}
+    .program-table tr{border-bottom:1px solid var(--border)}
+    .program-table td{padding:8px 0;color:var(--muted)}
+    .program-table td:last-child{text-align:right;color:var(--text);font-weight:700}
+    /* FOOTER */
+    footer{background:var(--dark);padding:2.5rem 3rem;text-align:center}
+    .footer-logo{font-family:'Playfair Display',serif;color:var(--gold-light);font-size:1.15rem;margin-bottom:0.5rem}
+    .footer-bar{width:40px;height:1px;background:var(--gold);margin:1rem auto;opacity:0.5}
+    .footer-text{font-size:12px;color:#555;letter-spacing:0.05em;margin-bottom:1rem}
+    .footer-links{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-top:0.75rem}
+    .footer-links a{font-size:12px;color:#777;text-decoration:none;letter-spacing:0.05em;cursor:pointer;transition:color 0.2s}
+    .footer-links a:hover{color:var(--gold-light)}
+    /* LEGAL MODALS */
+    .legal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.65);z-index:997;align-items:flex-start;justify-content:center;padding:2rem 1rem;overflow-y:auto}
+    .legal-overlay.active{display:flex}
+    .legal-modal{background:#fff;max-width:720px;width:100%;padding:2.5rem;margin:auto;position:relative;max-height:85vh;overflow-y:auto}
+    .legal-close{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--muted);z-index:1}
+    .legal-modal h2{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--dark);margin-bottom:0.25rem;font-weight:400}
+    .legal-modal .leg-badge{font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1rem;display:block}
+    .legal-modal .leg-bar{width:40px;height:2px;background:var(--gold);margin-bottom:1.5rem}
+    .legal-modal h3{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--dark);margin:1.5rem 0 0.5rem;font-weight:600}
+    .legal-modal p{font-size:13.5px;color:var(--text);line-height:1.8;margin-bottom:0.75rem}
+    .legal-modal ul{padding-left:1.5rem;font-size:13.5px;color:var(--text);line-height:1.8;margin-bottom:0.75rem}
+    .legal-modal table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:1rem}
+    .legal-modal table th{background:var(--cream);padding:8px 12px;text-align:left;font-weight:700;border:1px solid var(--border)}
+    .legal-modal table td{padding:8px 12px;border:1px solid var(--border);vertical-align:top}
+    .legal-update{font-size:12px;color:var(--muted);font-style:italic;margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border)}
+    /* COOKIE BANNER */
+    .cookie-banner{position:fixed;bottom:0;left:0;right:0;background:var(--dark2);border-top:1px solid rgba(184,146,42,0.3);padding:1.1rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;z-index:995;flex-wrap:wrap}
+    .cookie-banner p{font-size:13px;color:#bbb;flex:1;min-width:200px;margin:0}
+    .cookie-banner p a{color:var(--gold-light);text-decoration:none;cursor:pointer}
+    .cookie-banner-btns{display:flex;gap:0.75rem;flex-shrink:0}
+    .cookie-accept{background:var(--gold);color:#fff;border:none;padding:9px 22px;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;font-family:'Lato',sans-serif;font-weight:700}
+    .cookie-decline{background:transparent;color:#aaa;border:1px solid #555;padding:9px 18px;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;font-family:'Lato',sans-serif}
+    /* ROBOT CHECK */
+    .robot-check{display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap}
+    .robot-box{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.2);padding:12px 18px;cursor:pointer;transition:border-color 0.2s;user-select:none}
+    .robot-box:hover{border-color:var(--gold)}
+    .robot-checkbox{width:22px;height:22px;border:2px solid #aaa;background:transparent;display:flex;align-items:center;justify-content:center;transition:all 0.2s;flex-shrink:0}
+    .robot-checkbox.checked{background:var(--gold);border-color:var(--gold)}
+    .robot-checkbox.checked::after{content:'✓';color:#fff;font-size:14px;font-weight:700}
+    .robot-box span{font-size:14px;color:#ccc}
+    .robot-badge{font-size:11px;color:#777;display:flex;align-items:center;gap:5px}
+    /* CHATBOT */
+    .chat-bubble{position:fixed;bottom:2rem;right:2rem;z-index:990}
+    .chat-btn{width:58px;height:58px;border-radius:50%;background:var(--gold);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 20px rgba(184,146,42,0.4);transition:transform 0.2s;position:relative}
+    .chat-btn:hover{transform:scale(1.08)}
+    .chat-btn .chat-badge{position:absolute;top:-2px;right:-2px;background:#e74c3c;color:#fff;width:18px;height:18px;border-radius:50%;font-size:11px;display:flex;align-items:center;justify-content:center;font-weight:700}
+    .chat-window{display:none;position:absolute;bottom:70px;right:0;width:320px;background:#fff;border:1px solid var(--border);box-shadow:0 8px 40px rgba(0,0,0,0.15)}
+    .chat-window.open{display:flex;flex-direction:column}
+    .chat-header{background:var(--dark);padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between}
+    .chat-header-info{display:flex;align-items:center;gap:10px}
+    .chat-avatar{width:36px;height:36px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+    .chat-header h4{font-family:'Playfair Display',serif;color:#fff;font-size:0.95rem;font-weight:400;margin-bottom:1px}
+    .chat-header p{font-size:11px;color:#4ade80}
+    .chat-close{background:none;border:none;color:#aaa;font-size:1.2rem;cursor:pointer}
+    .chat-messages{flex:1;padding:1rem;overflow-y:auto;max-height:300px;display:flex;flex-direction:column;gap:0.75rem}
+    .msg{max-width:85%;padding:10px 14px;font-size:13px;line-height:1.5}
+    .msg.bot{background:var(--cream);color:var(--text);align-self:flex-start;border-radius:0 12px 12px 12px}
+    .msg.user{background:var(--gold);color:#fff;align-self:flex-end;border-radius:12px 12px 0 12px}
+    .chat-options{padding:0.75rem;display:flex;flex-direction:column;gap:0.5rem;border-top:1px solid var(--border)}
+    .chat-opt{background:transparent;border:1px solid var(--border);padding:8px 12px;font-size:12px;text-align:left;cursor:pointer;font-family:'Lato',sans-serif;color:var(--text);transition:all 0.2s}
+    .chat-opt:hover{background:var(--gold);color:#fff;border-color:var(--gold)}
+    .chat-input-area{padding:0.75rem;border-top:1px solid var(--border);display:flex;gap:0.5rem}
+    .chat-input{flex:1;border:1px solid var(--border);padding:8px 12px;font-size:13px;font-family:'Lato',sans-serif;outline:none}
+    .chat-input:focus{border-color:var(--gold)}
+    .chat-send{background:var(--gold);color:#fff;border:none;padding:8px 14px;cursor:pointer;font-size:1rem}
+    /* MODAL PROGRAMARE */
+    .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:999;align-items:center;justify-content:center}
+    .modal-overlay.active{display:flex}
+    .modal{background:#fff;padding:2.5rem;max-width:400px;width:90%;text-align:center}
+    .modal h3{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--dark);margin-bottom:0.75rem}
+    .modal p{font-size:14px;color:var(--muted);margin-bottom:1.5rem}
+    .modal-close{background:var(--gold);color:#fff;border:none;padding:12px 32px;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;font-family:'Lato',sans-serif;font-weight:700}
+    /* MODAL LEGAL */
+    .legal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.65);z-index:1000;align-items:flex-start;justify-content:center;padding:2rem 1rem;overflow-y:auto}
+    .legal-overlay.active{display:flex}
+    .legal-modal{background:#fff;max-width:720px;width:100%;padding:2.5rem;margin:auto;position:relative}
+    .legal-modal h2{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--dark);margin-bottom:0.5rem;font-weight:400}
+    .legal-modal .legal-badge{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1rem}
+    .legal-modal .legal-bar{width:40px;height:2px;background:var(--gold);margin-bottom:1.5rem}
+    .legal-close{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--muted)}
+    .legal-modal h3{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--dark);margin:1.5rem 0 0.5rem}
+    .legal-modal p{font-size:13.5px;color:var(--text);line-height:1.8;margin-bottom:0.75rem}
+    .legal-modal ul{padding-left:1.5rem;font-size:13.5px;color:var(--text);line-height:1.9;margin-bottom:0.75rem}
+    .legal-modal table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:1rem}
+    .legal-modal table th{background:var(--cream);padding:8px 12px;text-align:left;font-weight:700;border:1px solid var(--border);font-size:12px}
+    .legal-modal table td{padding:8px 12px;border:1px solid var(--border);color:var(--muted);vertical-align:top}
+    .legal-updated{font-size:12px;color:var(--muted);font-style:italic;margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border)}
+    /* COOKIE BANNER */
+    .cookie-banner{position:fixed;bottom:0;left:0;right:0;background:var(--dark2);padding:1.25rem 2rem;z-index:2000;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;border-top:2px solid var(--gold)}
+    .cookie-banner.hidden{display:none}
+    .cookie-text{font-size:13px;color:#ccc;flex:1;min-width:250px}
+    .cookie-text a{color:var(--gold-light);cursor:pointer;text-decoration:underline}
+    .cookie-btns{display:flex;gap:0.75rem;flex-shrink:0}
+    .cookie-accept{background:var(--gold);color:#fff;border:none;padding:10px 22px;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;cursor:pointer;font-family:'Lato',sans-serif}
+    .cookie-decline{background:transparent;color:#aaa;border:1px solid #555;padding:10px 18px;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;font-family:'Lato',sans-serif}
+    @media(max-width:640px){
+      nav{padding:0 1rem}
+      .nav-links{gap:0.6rem}
+      .nav-links a{font-size:10px}
+      .hero{padding:3rem 1.5rem 2.5rem}
+      .hero h1{font-size:2rem}
+      section{padding:2.5rem 1.5rem}
+      .form-section{padding:2.5rem 1.5rem}
+      .form-grid{grid-template-columns:1fr}
+      .form-group.full{grid-column:1}
+      .contact-grid{grid-template-columns:1fr}
+      .btn-outline{margin-left:0;margin-top:12px;display:block;text-align:center}
+      .cookie-banner{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-text">
+    🍪 Acest site folosește cookie-uri esențiale pentru funcționare. Nu utilizăm cookie-uri de tracking sau publicitate.
+    <a onclick="openLegal('cookies')">Politică Cookies</a> · <a onclick="openLegal('confidentialitate')">Confidențialitate</a>
+  </div>
+  <div class="cookie-btns">
+    <button class="cookie-decline" onclick="declineCookies()">Doar esențiale</button>
+    <button class="cookie-accept" onclick="acceptCookies()">Accept</button>
+  </div>
+</div>
+
+<div class="site-wrap">
+  <nav>
+    <div class="nav-logo">Cabinet Avocat Petrescu</div>
+    <div class="nav-links">
+      <a href="#servicii">Servicii</a>
+      <a href="#modele">Modele acte</a>
+      <a href="#articole">Articole</a>
+      <a href="#programare">Programare</a>
+      <a href="#contact">Contact</a>
+      <a href="portal.html" style="color:var(--gold-light);border:1px solid var(--gold);padding:4px 12px;">🔐 Portal Client</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-badge">Barou Hunedoara · Deva</div>
+    <h1>Av. <em>Petrescu</em><br>Angela-Mihaela</h1>
+    <div class="hero-bar"></div>
+    <p class="hero-desc">Reprezentare juridică profesională în drept civil, penal, familiei, drept societar și contencios administrativ</p>
+    <button class="btn-gold" onclick="document.getElementById('programare').scrollIntoView({behavior:'smooth'})">Programează consultație</button>
+    <a class="btn-outline" href="https://wa.me/40723565441" target="_blank">WhatsApp</a>
+  </div>
+
+  <section id="servicii">
+    <div class="section-badge">Domenii de practică</div>
+    <div class="section-title">Servicii juridice</div>
+    <div class="section-bar"></div>
+    <div class="services-grid">
+      <div class="service-card"><div class="service-icon">⚖️</div><h3>Drept civil</h3><p>Litigii civile, contracte, răspundere civilă, executare silită, dreptul de proprietate.</p></div>
+      <div class="service-card"><div class="service-icon">👨‍👩‍👧</div><h3>Dreptul familiei</h3><p>Divorț, autoritate părintească, pensie alimentară, stabilirea programului de vizitare.</p></div>
+      <div class="service-card"><div class="service-icon">🏛️</div><h3>Drept penal</h3><p>Apărare în faza de urmărire penală și judecată, constituire parte civilă, plângeri penale.</p></div>
+      <div class="service-card"><div class="service-icon">🏠</div><h3>Drept imobiliar</h3><p>Litigii de carte funciară, revendicări, servituți, uzucapiune, partaj.</p></div>
+      <div class="service-card"><div class="service-icon">🏢</div><h3>Contencios administrativ</h3><p>Contestații acte administrative, litigii de muncă, funcție publică.</p></div>
+      <div class="service-card"><div class="service-icon">💳</div><h3>Credit bancar</h3><p>Clauze abuzive, restituire sume, clauze CHF/EUR, negociere bancară.</p></div>
+      <div class="service-card"><div class="service-icon">🏗️</div><h3>Drept societar & RC</h3><p>Înființare și dizolvare societăți, modificări statutare, litigii între asociați, mențiuni RC.</p></div>
+      <div class="service-card"><div class="service-icon">🤝</div><h3>Asociații, Fundații & ONG</h3><p>Înființare asociații nonprofit, cluburi sportive, fundații, modificări statutare.</p></div>
+      <div class="service-card"><div class="service-icon">🩺</div><h3>Malpraxis medical</h3><p>Acțiuni în despăgubire pentru erori medicale, asistență pacienți și personal medical.</p></div>
+    </div>
+  </section>
+
+  <div class="oferta-box">
+    <h3>Onorarii personalizate pentru fiecare caz</h3>
+    <p>Tarifele se stabilesc în funcție de complexitatea cauzei, tipul clientului și natura serviciului juridic solicitat. Contactați-ne pentru o ofertă.</p>
+    <button class="btn-gold" onclick="document.getElementById('programare').scrollIntoView({behavior:'smooth'})">Solicitați ofertă</button>
+    <a class="btn-outline" href="https://wa.me/40723565441" target="_blank">WhatsApp</a>
+  </div>
+
+  <section id="modele" class="alt">
+    <div class="section-badge">Descărcare gratuită</div>
+    <div class="section-title">Modele de acte</div>
+    <div class="section-bar"></div>
+    <p style="font-size:14px;color:var(--muted)">Modele orientative cu caracter informativ. Pentru adaptarea la situația dumneavoastră specifică, vă recomandăm consultarea unui avocat.</p>
+    <div class="acte-grid" id="acte-grid"></div>
+  </section>
+
+  <section id="articole">
+    <div class="section-badge">Informații juridice</div>
+    <div class="section-title">Articole juridice</div>
+    <div class="section-bar"></div>
+    <p style="font-size:14px;color:var(--muted)">Articolele au caracter informativ general și nu constituie consultanță juridică pentru un caz specific.</p>
+    <div class="articole-grid" id="articole-grid"></div>
+  </section>
+
+  <section class="alt">
+    <div class="section-badge">Important</div>
+    <div class="section-title">Reguli consultație</div>
+    <div class="section-bar"></div>
+    <ul class="reguli-list">
+      <li><div class="regula-nr">1</div><div>Consultațiile <strong>se plătesc în avans</strong>. Programarea devine confirmată doar după efectuarea plății.</div></li>
+      <li><div class="regula-nr">2</div><div>Anularea se acceptă cu minimum <strong>24 de ore înainte</strong>. Neprezentarea fără anulare nu se rambursează.</div></li>
+      <li><div class="regula-nr">3</div><div>La consultație aduceți <strong>toate documentele relevante</strong> ale cauzei (contracte, hotărâri, corespondență).</div></li>
+      <li><div class="regula-nr">4</div><div>Consultația nu reprezintă constituirea unui raport de asistență juridică fără semnarea unui <strong>contract de asistență</strong>.</div></li>
+      <li><div class="regula-nr">5</div><div>Confidențialitatea datelor dumneavoastră este garantată conform <strong>Regulamentului GDPR (UE) 679/2016</strong>.</div></li>
+    </ul>
+  </section>
+
+  <section id="programare" class="form-section">
+    <div class="section-badge" style="color:var(--gold-light)">Online</div>
+    <div class="section-title" style="color:#fff">Programare consultație</div>
+    <div class="section-bar"></div>
+    <p style="font-size:14px;color:#aaa">Completați formularul. Veți fi contactat în termen de 2 ore pentru confirmare și detalii plată.</p>
+    <div class="form-grid">
+      <div class="form-group"><label>Nume complet</label><input type="text" placeholder="Ion Popescu" id="f-nume"></div>
+      <div class="form-group"><label>Telefon</label><input type="tel" placeholder="07xx xxx xxx" id="f-tel"></div>
+      <div class="form-group"><label>Email</label><input type="email" placeholder="adresa@email.ro" id="f-email"></div>
+      <div class="form-group">
+        <label>Tip client</label>
+        <select id="f-client"><option value="">— Selectați —</option><option>Persoană fizică</option><option>Persoană juridică</option></select>
+      </div>
+      <div class="form-group">
+        <label>Tip consultație</label>
+        <select id="f-tip"><option value="">— Selectați —</option><option>Consultație video</option><option>Consultație cabinet</option><option>Reprezentare dosar</option></select>
+      </div>
+      <div class="form-group">
+        <label>Domeniu juridic</label>
+        <select id="f-domeniu"><option value="">— Selectați —</option><option>Drept civil</option><option>Dreptul familiei</option><option>Drept penal</option><option>Drept imobiliar</option><option>Contencios administrativ</option><option>Credit bancar</option><option>Drept societar / RC</option><option>Asociații / Fundații / ONG</option><option>Malpraxis medical</option><option>Altul</option></select>
+      </div>
+      <div class="form-group"><label>Data preferată</label><input type="date" id="f-data"></div>
+      <div class="form-group full"><label>Descriere scurtă a situației</label><textarea rows="4" placeholder="Descrieți pe scurt problema juridică..." id="f-desc" style="resize:vertical"></textarea></div>
+    </div>
+    <div class="gdpr-check">
+      <input type="checkbox" id="f-gdpr">
+      <label for="f-gdpr">Am citit și sunt de acord cu <a onclick="openLegal('confidentialitate')">Politica de Confidențialitate</a> și cu prelucrarea datelor mele personale în scopul gestionării cererii de programare.</label>
+    </div>
+    <div class="robot-check">
+      <div class="robot-box" id="robotBox" onclick="toggleRobot()">
+        <div class="robot-checkbox" id="robotCheckbox"></div>
+        <span>Nu sunt robot</span>
+      </div>
+      <div class="robot-badge">🔒 Verificare securitate</div>
+    </div>
+    <div class="form-submit">
+      <button class="btn-gold" onclick="submitForm()">Trimite cerere de programare</button>
+      <p class="form-note">* Nu trimiteți date confidențiale în formular. Detaliile se discută la consultație.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-badge">Localizare</div>
+    <div class="section-title">Contact</div>
+    <div class="section-bar"></div>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-label">Adresă</div><div class="contact-val">Bld. 1 Decembrie 1918, Nr. 19, Et. 1<br>Mun. Deva, Jud. Hunedoara</div></div></div>
+        <div class="contact-item"><div class="contact-icon">📞</div><div><div class="contact-label">Telefon mobil</div><div class="contact-val"><a href="tel:+40723565441">0723 565 441</a></div></div></div>
+        <div class="contact-item"><div class="contact-icon">📠</div><div><div class="contact-label">Telefon fix / Fax</div><div class="contact-val">0254 267 893</div></div></div>
+        <div class="contact-item"><div class="contact-icon">✉️</div><div><div class="contact-label">Email</div><div class="contact-val"><a href="mailto:av_petrescuangela@yahoo.com">av_petrescuangela@yahoo.com</a></div></div></div>
+        <div class="contact-item"><div class="contact-icon">🏛️</div><div><div class="contact-label">Barou</div><div class="contact-val">Barou Hunedoara</div></div></div>
+        <a class="whatsapp-btn" href="https://wa.me/40723565441" target="_blank"><span style="font-size:1.2rem">💬</span> Scrie pe WhatsApp · 0723 565 441</a>
+      </div>
+      <div>
+        <div class="contact-label" style="margin-bottom:1rem">Program</div>
+        <table class="program-table">
+          <tr><td>Luni – Joi</td><td>09:00 – 17:30</td></tr>
+          <tr><td>Vineri</td><td>09:00 – 15:00</td></tr>
+          <tr><td>Sâmbătă</td><td>La programare</td></tr>
+          <tr><td>Duminică</td><td>La programare</td></tr>
+        </table>
+        <div style="margin-top:1.5rem;background:var(--cream);padding:1.25rem;border-left:3px solid var(--gold)">
+          <div style="font-size:12px;text-transform:uppercase;letter-spacing:0.1em;color:var(--gold);font-weight:700;margin-bottom:0.5rem">Plată consultație</div>
+          <div style="font-size:13px;color:var(--muted)">Revolut · Transfer bancar<br>Se achită înainte de confirmarea programării</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">Cabinet de Avocat Petrescu Angela-Mihaela</div>
+    <div class="footer-bar"></div>
+    <div class="footer-text">Avocat Definitiv · Barou Hunedoara · Înscrisă din 23.12.2003</div>
+    <div class="footer-text" style="margin-top:4px">Bld. 1 Decembrie 1918, Nr. 19, Et. 1, Mun. Deva, Jud. Hunedoara</div>
+    <div class="footer-text" style="margin-top:4px">Tel: 0723 565 441 · Fax: 0254 267 893 · av_petrescuangela@yahoo.com</div>
+    <div class="footer-text" style="margin-top:4px">Instanțe cu drept de concluzii: Toate instanțele · © 2025</div>
+    <div class="footer-links" style="margin-top:1rem">
+      <a onclick="openLegal('confidentialitate')">Politică de Confidențialitate</a>
+      <a onclick="openLegal('cookies')">Politică Cookies</a>
+      <a onclick="openLegal('termeni')">Termeni și Condiții</a>
+    </div>
+  </footer>
+</div>
+
+<!-- MODAL PROGRAMARE -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <div style="font-size:2.5rem;margin-bottom:1rem">✅</div>
+    <h3>Cerere trimisă!</h3>
+    <p>Vă mulțumim. Veți fi contactat în termen de 2 ore pentru confirmare și detalii de plată.</p>
+    <button class="modal-close" onclick="document.getElementById('modal').classList.remove('active')">OK, înțeles</button>
+  </div>
+</div>
+
+<!-- MODAL ARTICOLE -->
+<div class="art-overlay" id="art-overlay">
+  <div class="art-modal">
+    <button class="art-close" onclick="closeArticol()">✕</button>
+    <div id="art-body"></div>
+  </div>
+</div>
+
+<!-- MODAL LEGAL -->
+<div class="legal-overlay" id="legal-overlay">
+  <div class="legal-modal">
+    <button class="legal-close" onclick="closeLegal()">✕</button>
+    <div id="legal-body"></div>
+  </div>
+</div>
+
+<script>
+// ============ ACTE ============
+var acte=[
+  {title:"Cerere de chemare în judecată",desc:"Model general civil",file:"cerere_chemare_judecata",content:"JUDECĂTORIA / TRIBUNALUL _______________\n\nCEREE DE CHEMARE ÎN JUDECATĂ\n\nDosar nr.: _______________\n\nSubsemnatul/a _____________, domiciliat/ă în _____________, str. _____________ nr. ___, județul _____________, CNP _____________, în calitate de RECLAMANT/Ă,\n\nchem în judecată pe _____________, domiciliat/ă în _____________, în calitate de PÂRÂT/Ă,\n\npentru ca prin hotărârea ce o veți pronunța să dispuneți:\n_______________________________________________\n\nMOTIVELE CERERII:\n\nÎn fapt: _______________________________________________\n\nÎn drept: Îmi întemeiez cererea pe dispozițiile art. _____ din _____________________.\n\nPROBE: Înțeleg să mă folosesc de proba cu înscrisuri / interogatoriu / martori / expertiză.\n\nANEXE: _______________\n\nData: _______________     Semnătura: _______________"},
+  {title:"Întâmpinare",desc:"Răspuns la cererea de chemare în judecată",file:"intampinare",content:"JUDECĂTORIA / TRIBUNALUL _______________\nDosar nr.: _______________\n\nÎNTÂMPINARE\n\nSubsemnatul/a _____________, domiciliat/ă în _____________, CNP _____________, în calitate de PÂRÂT/Ă,\n\nfață de cererea de chemare în judecată formulată de reclamantul _____________,\n\nformuleze prezenta ÎNTÂMPINARE prin care solicit:\n1. Pe cale de excepție: _______________\n2. Pe fond: respingerea cererii ca _______________\n\nÎN FAPT: _______________________________________________\n\nÎN DREPT: Mă întemeiez pe dispozițiile art. _____ C.civ. / C.proc.civ.\n\nPROBE: _______________\n\nANEXE: _______________\n\nData: _______________     Semnătura: _______________"},
+  {title:"Răspuns la întâmpinare",desc:"Model răspuns la apărările pârâtului",file:"raspuns_intampinare",content:"JUDECĂTORIA / TRIBUNALUL _______________\nDosar nr.: _______________\n\nRĂSPUNS LA ÎNTÂMPINARE\n\nSubsemnatul/a _____________, RECLAMANT/Ă în dosarul de mai sus,\n\nfață de întâmpinarea depusă de pârâtul _____________, formulez prezentul\n\nRĂSPUNS LA ÎNTÂMPINARE\n\nEXCEPȚIILE INVOCATE SUNT NEÎNTEMEIATE, deoarece:\n_______________________________________________\n\nAPĂRĂRILE PE FOND ALE PÂRÂTULUI SUNT NEÎNTEMEIATE, deoarece:\n_______________________________________________\n\nSolicit menținerea în totalitate a cererii de chemare în judecată.\n\nPROBE SUPLIMENTARE: _______________\n\nData: _______________     Semnătura: _______________"},
+  {title:"Cerere legalizare sentință",desc:"Cerere pentru obținerea copiei legalizate",file:"cerere_legalizare_sentinta",content:"JUDECĂTORIA / TRIBUNALUL _______________\nDosar nr.: _______________\n\nCEREE DE LEGALIZARE A HOTĂRÂRII JUDECĂTOREȘTI\n\nSubsemnatul/a _____________, CNP _____________, parte în dosarul nr. _______________,\n\nsolicit eliberarea unei copii legalizate / cu mențiunea rămânerii definitive a\nSentinței/Deciziei civile/penale nr. _____ din data de _______________.\n\nCopia legalizată este necesară pentru: _______________\n\nAnexez dovada achitării taxei judiciare de timbru în valoare de _____ lei.\n\nData: _______________     Semnătura: _______________"},
+  {title:"Cerere studiu dosar",desc:"Cerere pentru consultarea dosarului la instanță",file:"cerere_studiu_dosar",content:"JUDECĂTORIA / TRIBUNALUL _______________\nDosar nr.: _______________\n\nCEREE DE STUDIU DOSAR\n\nSubsemnatul/a _____________, CNP _____________, parte în dosarul nr. _______________ în calitate de _______________,\n\nSAU\n\nSubsemnatul/a av. _____________, înscris/ă în Baroul _____, apărător ales al _______________,\n\nsolicit acordarea accesului la dosarul nr. _______________ în vederea studierii acestuia și efectuării de fotocopii.\n\nData: _______________     Semnătura: _______________"},
+  {title:"Cerere solicitare acte din dosar",desc:"Cerere eliberare copii de pe actele dosarului",file:"cerere_solicitare_acte_dosar",content:"JUDECĂTORIA / TRIBUNALUL _______________\nDosar nr.: _______________\n\nCEREE DE ELIBERARE COPII DE PE ACTELE DOSARULUI\n\nSubsemnatul/a _____________, CNP _____________, parte/apărător în dosarul nr. _______________,\n\nsolicit eliberarea de copii de pe următoarele acte:\n1. _______________\n2. _______________\n3. _______________\n\nMotivul solicitării: _______________\n\nMă angajez să achit contravaloarea fotocopierii conform taxelor legale.\n\nData: _______________     Semnătura: _______________"},
+  {title:"Cerere consultare și fotocopii dosar penal",desc:"Cerere adresată organelor de urmărire penală",file:"cerere_consultare_dosar_penal",content:"PARCHETUL DE PE LÂNGĂ _______________\nDosar nr.: _______________\n\nCEREE DE CONSULTARE ȘI EFECTUARE FOTOCOPII DOSAR PENAL\n\nSubsemnatul/a av. _____________, înscris/ă în Baroul _____, apărător ales al suspectului/inculpatului _______________,\n\nîn baza art. 94 alin. (1) din Codul de procedură penală, solicit:\n1. Acordarea accesului la dosarul penal nr. _______________;\n2. Autorizarea efectuării de fotocopii de pe actele din dosar.\n\nData: _______________     Semnătura: _______________"},
+  {title:"Cerere asistare la acte de urmărire penală",desc:"Cerere pentru prezența avocatului la acte procedurale",file:"cerere_asistare_urmarire_penala",content:"PARCHETUL DE PE LÂNGĂ _______________\nDosar nr.: _______________\n\nCEREE DE ASISTARE LA ACTELE DE URMĂRIRE PENALĂ\n\nSubsemnatul/a av. _____________, apărător ales al suspectului/inculpatului _______________,\n\nîn baza art. 92-93 din Codul de procedură penală, solicit:\n- să fiu informat/ă și să asist la orice act de urmărire penală efectuat cu participarea clientului meu;\n- să fiu notificat/ă cu cel puțin 24 de ore înainte de efectuarea oricărui astfel de act.\n\nData: _______________     Semnătura: _______________"},
+  {title:"Plângere penală",desc:"Model plângere penală adresată organelor competente",file:"plangere_penala",content:"PARCHETUL DE PE LÂNGĂ _______________\n\nPLÂNGERE PENALĂ\n\nSubsemnatul/a _____________, domiciliat/ă în _____________, CNP _____________, telefon _______________,\n\nformulez prezenta PLÂNGERE PENALĂ împotriva numitului/numitei _______________,\n\npentru săvârșirea infracțiunii de _______________, prevăzută de art. _____ din _____________________.\n\nSITUAȚIA DE FAPT:\n_______________________________________________\n\nPROBE: _______________\n\nSolicit efectuarea cercetărilor penale și trimiterea în judecată.\n\nMă constitui parte civilă cu suma de _____ lei, reprezentând _______________. (dacă este cazul)\n\nData: _______________     Semnătura: _______________"},
+  {title:"Cerere de executare silită",desc:"Cerere adresată executorului judecătoresc",file:"cerere_executare_silita",content:"BIROUL EXECUTORULUI JUDECĂTORESC _______________\n\nCEREE DE EXECUTARE SILITĂ\n\nSubsemnatul/a _____________, CNP _____________, în calitate de CREDITOR,\n\nsolicit punerea în executare a titlului executoriu:\n[ ] Sentința civilă nr. _____ din _______________\n[ ] Contractul autentificat sub nr. _____ din _______________\n[ ] Alt titlu: _______________\n\nîmpotriva DEBITORULUI _____________, CNP _______________,\n\npentru recuperarea sumei de _____ lei,\n\nprin modalitatea: [ ] poprire bancară [ ] urmărire bunuri mobile [ ] urmărire imobiliară.\n\nData: _______________     Semnătura: _______________"},
+  {title:"Cerere îndreptare eroare materială",desc:"Cerere adresată instanței pentru corectarea erorilor",file:"cerere_indreptare_eroare",content:"JUDECĂTORIA / TRIBUNALUL _______________\nDosar nr.: _______________\n\nCEREE DE ÎNDREPTARE A ERORII MATERIALE\n\nSubsemnatul/a _____________, parte în dosarul nr. _______________, în temeiul art. 442 din Codul de procedură civilă,\n\nsolicit îndreptarea erorii materiale strecurate în cuprinsul Sentinței/Deciziei nr. _____ din _______________:\n\nLa pagina ___, unde se menționează: \"_______________\"\nSe va citi corect: \"_______________\"\n\nMotivul erorii: _______________\n\nData: _______________     Semnătura: _______________"},
+  {title:"Contract de închiriere",desc:"Model contract închiriere locuință",file:"contract_inchiriere",content:"CONTRACT DE ÎNCHIRIERE\n\nÎncheiat astăzi, _______________, între:\n\nLOCATOR: _____________, CNP _____________, în calitate de PROPRIETAR,\nLOCATAR: _____________, CNP _____________, în calitate de CHIRIAȘ,\n\nArt. 1. OBIECTUL: Proprietarul dă în chirie apartamentul/imobilul situat în _____________, compus din ___ camere, suprafață _____ mp.\n\nArt. 2. DURATA: _____ luni/ani, de la _______________ la _______________.\n\nArt. 3. CHIRIA: _____ lei/euro/lună, achitabilă până la data de _____ a fiecărei luni.\n\nArt. 4. GARANȚIA: _____ lei/euro, restituibilă la încetarea contractului.\n\nArt. 5. OBLIGAȚII LOCATOR: predare în stare corespunzătoare, asigurarea folosinței liniștite, reparații capitale.\n\nArt. 6. OBLIGAȚII LOCATAR: folosire ca bun proprietar, plata utilităților, interzicerea subînchirierii fără acord scris.\n\nArt. 7. ÎNCETARE: la termen, prin acord, prin reziliere cu notificare de _____ zile.\n\nPROPRIETAR: _______________     CHIRIAȘ: _______________\nData: _______________"},
+  {title:"Contract de comodat",desc:"Model contract împrumut de folosință gratuit",file:"contract_comodat",content:"CONTRACT DE COMODAT\n(Împrumut de folosință)\n\nÎncheiat astăzi, _______________, între:\n\nCOMODANT: _____________, CNP _____________, în calitate de PROPRIETAR/ÎMPRUMUTĂTOR,\nCOMODATAR: _____________, CNP _____________, în calitate de ÎMPRUMUTAT,\n\nArt. 1. OBIECTUL: Comodantul transmite comodatarului dreptul de folosință GRATUITĂ asupra: _______________\n\nArt. 2. DURATA: _____ luni/ani, de la _______________.\n\nArt. 3. SCOPUL FOLOSINȚEI: exclusiv pentru _______________.\n\nArt. 4. OBLIGAȚII COMODATAR: folosire conform destinației, conservare, suportarea cheltuielilor de întreținere, restituire la termen.\n\nArt. 5. RĂSPUNDERE: Comodatarul răspunde pentru deteriorarea bunului, cu excepția uzurii normale.\n\nArt. 6. RESTITUIRE: Se consemnează printr-un proces-verbal de predare-primire.\n\nCOMODANT: _______________     COMODATAR: _______________\nData: _______________"}
+];
+
+var acteGrid=document.getElementById('acte-grid');
+acte.forEach(function(act,idx){
+  var c=document.createElement('div');
+  c.className='act-card';
+  c.innerHTML='<div class="act-info"><div class="act-title">'+act.title+'</div><div class="act-desc">'+act.desc+'</div></div><a class="act-btn" href="#" onclick="dlAct('+idx+');return false;">⬇ Descarcă</a>';
+  acteGrid.appendChild(c);
+});
+function dlAct(idx){
+  var a=acte[idx];
+  var blob=new Blob(['\ufeff'+a.title+'\n'+Array(a.title.length+1).join('=')+'\n\n'+a.content+'\n\n---\nModel orientativ. Cabinet Avocat Petrescu Angela-Mihaela, Deva.'],{type:'text/plain;charset=utf-8'});
+  var url=URL.createObjectURL(blob);
+  var el=document.createElement('a');
+  el.href=url; el.download=a.file+'.txt'; el.click();
+  URL.revokeObjectURL(url);
+}
+
+// ============ ARTICOLE ============
+var articole=[
+  {cat:"Dreptul familiei",title:"Ce drepturi ai ca părinte după divorț?",preview:"Divorțul nu pune capăt relației dintre părinți și copii. Legea română prevede că autoritatea părintească se exercită, de regulă, în comun de ambii părinți.",body:"<div class='art-cat'>Dreptul familiei</div><h2>Ce drepturi ai ca părinte după divorț?</h2><div class='art-bar'></div><p>Divorțul nu pune capăt relației dintre părinți și copii. Codul civil prevede că autoritatea părintească se exercită în comun de ambii părinți, indiferent de locul de rezidență al copilului.</p><h4>Autoritatea părintească comună</h4><p>Ambii părinți participă la deciziile importante: educație, sănătate, reședință. Deciziile unilaterale pot fi contestate în instanță.</p><h4>Programul de vizitare</h4><p>Părintele la care copilul nu locuiește are dreptul la un program de vizitare stabilit de instanță: weekenduri alternante, jumătate din vacanțe și sărbători.</p><h4>Pensia alimentară</h4><p>Se stabilește între 1/4 și 1/3 din venitul net al părintelui obligat, per copil.</p><h4>Nerespectarea programului</h4><p>Constituie infracțiunea de nerespectare a hotărârilor judecătorești, pedepsită cu închisoare sau amendă.<div class='art-disclaimer'>Articol informativ. Consultați un avocat pentru situația dumneavoastră specifică.</div>"},
+  {cat:"Credit bancar",title:"Clauze abuzive bancare: cum îți recuperezi banii",preview:"Mii de români au câștigat procese împotriva băncilor pentru clauze abuzive. Aflați care sunt cele mai frecvente și cum procedați.",body:"<div class='art-cat'>Credit bancar</div><h2>Clauze abuzive bancare: cum îți recuperezi banii</h2><div class='art-bar'></div><p>Legislația română (Legea 193/2000) și europeană protejează consumatorii împotriva clauzelor abuzive din contractele bancare.</p><h4>Cele mai frecvente clauze abuzive</h4><p>Comision de risc/administrare lunar; dobândă variabilă definită unilateral; comision de rambursare anticipată; modificarea unilaterală a condițiilor.</p><h4>Contracte CHF</h4><p>Creditele în franci elvețieni acordate anterior anului 2015 beneficiază de protecție specială. Mulți clienți au obținut conversia sau înghetarea cursului.</p><h4>Cum procedezi</h4><p>Analiză contract de avocat → identificare clauze abuzive → cerere de chemare în judecată. Practica instanțelor române este favorabilă consumatorilor.<div class='art-disclaimer'>Articol informativ. Fiecare contract este diferit — consultați un avocat pentru analiza situației dumneavoastră.</div>"},
+  {cat:"Drept penal",title:"Ce faci dacă ești chemat la poliție sau parchet?",preview:"Mulți cetățeni nu știu ce drepturi au când sunt chemați ca martor, suspect sau inculpat. Iată ce trebuie să știți.",body:"<div class='art-cat'>Drept penal</div><h2>Ce faci dacă ești chemat la poliție sau parchet?</h2><div class='art-bar'></div><p>Primirea unei citații poate fi stresantă. Este important să vă cunoașteți drepturile.</p><h4>Citat ca martor</h4><p>Ești obligat să te prezinți și să declari adevărul. Poți refuza declarații care te-ar autoincrimina pe tine sau rudele apropiate.</p><h4>Citat ca suspect sau inculpat</h4><p>Ai dreptul: să taci; la avocat ales sau din oficiu; să cunoști acuzațiile; să studiezi dosarul.</p><h4>Ce NU trebuie să faci</h4><p>Nu semna nicio declarație fără a o citi și fără a consulta un avocat. Nu discuta cazul cu alte persoane.<div class='art-disclaimer'>Articol informativ. Consultați un avocat înainte de orice audiere.</div>"},
+  {cat:"Drept societar & ONG",title:"Cum înființezi o asociație nonprofit sau un club sportiv",preview:"Asociațiile, fundațiile și cluburile sportive se înregistrează în baza OG 26/2000. Iată pașii principali.",body:"<div class='art-cat'>Drept societar & ONG</div><h2>Cum înființezi o asociație nonprofit sau un club sportiv</h2><div class='art-bar'></div><p>Asociațiile și fundațiile sunt reglementate de OG nr. 26/2000. Înregistrarea se face la Judecătoria din circumscripția sediului.</p><h4>Asociație vs Fundație</h4><p>Asociația necesită minimum 3 fondatori fără patrimoniu inițial semnificativ. Fundația necesită patrimoniu inițial de cel puțin 100 salarii minime brute.</p><h4>Documente necesare</h4><p>Act constitutiv autentificat sau atestat de avocat; Statut; Dovada sediului; Caziere judiciare fondatori; Declarații pe propria răspundere.</p><h4>Cluburi sportive</h4><p>Se pot constitui ca asociații (OG 26/2000) sau societăți comerciale (Legea 69/2000). Trebuie să se afilieze la federațiile sportive naționale.<div class='art-disclaimer'>Articol informativ. Consultați un avocat pentru procedura actualizată.</div>"},
+  {cat:"Malpraxis medical",title:"Malpraxis medical: ce drepturi ai ca pacient",preview:"Erorile medicale pot fi remediate juridic. Aflați ce înseamnă malpraxisul și la ce despăgubiri aveți dreptul.",body:"<div class='art-cat'>Malpraxis medical</div><h2>Malpraxis medical: ce drepturi ai ca pacient</h2><div class='art-bar'></div><p>Malpraxisul medical este reglementat de Legea nr. 95/2006. Reprezintă eroarea profesională a unui cadru medical care cauzează un prejudiciu pacientului.</p><h4>Ce constituie malpraxis</h4><p>Diagnostic greșit sau tardiv; tratament inadecvat; omiterea investigațiilor necesare; erori chirurgicale; lipsa consimțământului informat.</p><h4>Procedura juridică</h4><p>Conciliere prealabilă cu asiguratorul de malpraxis → dacă nu se ajunge la acord → acțiune în instanță (civil și/sau penal).</p><h4>Termenul de prescripție</h4><p>3 ani de la data la care pacientul a cunoscut sau trebuia să cunoască existența prejudiciului și legătura cu actul medical.<div class='art-disclaimer'>Fiecare caz este unic. Consultați un avocat specializat pentru evaluarea cauzei dumneavoastră.</div>"},
+  {cat:"Drept civil",title:"Executarea silită: cum te aperi ca debitor",preview:"Dacă ești urmărit silit, ai mijloace juridice de apărare. Contestația la executare poate suspenda sau anula executarea nelegală.",body:"<div class='art-cat'>Drept civil</div><h2>Executarea silită: cum te aperi ca debitor</h2><div class='art-bar'></div><p>Ca debitor, ai dreptul la apărare împotriva executării silite.</p><h4>Contestația la executare</h4><p>Principalul mijloc de apărare (art. 711-720 C.proc.civ.). Poți contesta: legalitatea formelor de executare; prescripția; caracterul abuziv al actelor; calculul greșit al creanței.</p><h4>Termenul</h4><p>15 zile de la data la care ai luat cunoștință de actul de executare.</p><h4>Bunuri neurmăribile</h4><p>Locuința principală (în anumite condiții); obiectele de uz personal; bunurile necesare exercitării profesiei; salariul (parțial — 1/3 din venit net).<div class='art-disclaimer'>Termenele în executarea silită sunt foarte scurte. Consultați un avocat imediat ce ați primit o somație.</div>"}
+];
+
+var ag=document.getElementById('articole-grid');
+articole.forEach(function(art,idx){
+  var c=document.createElement('div');
+  c.className='articol-card';
+  c.innerHTML='<div class="articol-cat">'+art.cat+'</div><h3>'+art.title+'</h3><p>'+art.preview+'</p><span class="articol-more">Citește mai mult →</span>';
+  c.onclick=function(){openArticol(idx);};
+  ag.appendChild(c);
+});
+function openArticol(idx){
+  document.getElementById('art-body').innerHTML=articole[idx].body;
+  document.getElementById('art-overlay').classList.add('active');
+  document.body.style.overflow='hidden';
+}
+function closeArticol(){
+  document.getElementById('art-overlay').classList.remove('active');
+  document.body.style.overflow='';
+}
+document.getElementById('art-overlay').addEventListener('click',function(e){if(e.target===this)closeArticol();});
+
+// ============ LEGAL MODALS ============
+var legalDocs={
+  confidentialitate:{
+    title:"Politică de Confidențialitate",
+    badge:"GDPR · Regulamentul (UE) 679/2016",
+    body:`<h3>1. Identitatea operatorului</h3>
+<p>Cabinet de Avocat Petrescu Angela-Mihaela, cu sediul în Mun. Deva, Bld. 1 Decembrie 1918, Nr. 19, Et. 1, Jud. Hunedoara, înscrisă în Baroul Hunedoara, email: av_petrescuangela@yahoo.com, tel: 0723 565 441 (<strong>„Operatorul"</strong>).</p>
+<h3>2. Datele personale colectate</h3>
+<p>Prin intermediul formularului de programare de pe site colectăm: nume și prenume; număr de telefon; adresă de email; descrierea situației juridice; preferința de dată și tip consultație.</p>
+<h3>3. Scopul și temeiul juridic al prelucrării</h3>
+<table><tr><th>Scop</th><th>Temei juridic</th></tr><tr><td>Gestionarea cererii de programare</td><td>Art. 6 alin. (1) lit. b) GDPR — executarea unui contract / pași precontractuali</td></tr><tr><td>Comunicare cu clientul privind programarea</td><td>Art. 6 alin. (1) lit. b) GDPR</td></tr><tr><td>Obligații legale profesionale (avocat)</td><td>Art. 6 alin. (1) lit. c) GDPR</td></tr></table>
+<h3>4. Durata stocării</h3>
+<p>Datele colectate prin formular sunt stocate pe durata necesară gestionării cererii de programare și, ulterior, pentru o perioadă de maximum <strong>3 ani</strong>, conform obligațiilor profesionale ale avocatului, după care sunt șterse sau anonimizate.</p>
+<h3>5. Destinatarii datelor</h3>
+<p>Datele dumneavoastră nu sunt transmise unor terți, cu excepția cazurilor impuse de lege (ex. autorități judiciare, organe de urmărire penală). Nu utilizăm servicii de marketing terțe.</p>
+<h3>6. Drepturile dumneavoastră</h3>
+<p>În conformitate cu GDPR, aveți următoarele drepturi:</p>
+<ul><li><strong>Dreptul de acces</strong> — puteți solicita o copie a datelor deținute despre dumneavoastră;</li><li><strong>Dreptul la rectificare</strong> — puteți solicita corectarea datelor inexacte;</li><li><strong>Dreptul la ștergere</strong> ("dreptul de a fi uitat") — în condițiile prevăzute de lege;</li><li><strong>Dreptul la restricționarea prelucrării</strong>;</li><li><strong>Dreptul la portabilitatea datelor</strong>;</li><li><strong>Dreptul de a depune plângere</strong> la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP), www.dataprotection.ro.</li></ul>
+<h3>7. Securitatea datelor</h3>
+<p>Aplicăm măsuri tehnice și organizatorice adecvate pentru protejarea datelor dumneavoastră împotriva accesului neautorizat, pierderii sau distrugerii.</p>
+<h3>8. Contact</h3>
+<p>Pentru exercitarea drepturilor sau orice întrebări legate de prelucrarea datelor, ne puteți contacta la: <strong>av_petrescuangela@yahoo.com</strong> sau telefonic la <strong>0723 565 441</strong>.</p>
+<p class="legal-updated">Ultima actualizare: mai 2025</p>`
+  },
+  cookies:{
+    title:"Politică Cookies",
+    badge:"Directiva ePrivacy · GDPR",
+    body:`<h3>1. Ce sunt cookie-urile?</h3>
+<p>Cookie-urile sunt fișiere text de mici dimensiuni stocate în browserul dumneavoastră atunci când vizitați un site web. Acestea permit site-ului să vă recunoască la vizite ulterioare și să memoreze preferințele dumneavoastră.</p>
+<h3>2. Ce cookie-uri folosim</h3>
+<table><tr><th>Tip</th><th>Descriere</th><th>Durată</th></tr><tr><td>Cookie-uri esențiale</td><td>Necesare pentru funcționarea corectă a site-ului (ex: memorarea preferinței privind cookie-urile)</td><td>1 an</td></tr></table>
+<p><strong>Nu folosim</strong> cookie-uri de tracking, publicitate, analiză comportamentală sau rețele sociale.</p>
+<h3>3. Cookie-uri terțe</h3>
+<p>Site-ul poate încărca fonturile Google Fonts (fonts.googleapis.com). Google poate stoca cookie-uri proprii conform politicii sale de confidențialitate. Nu avem control asupra acestor cookie-uri.</p>
+<h3>4. Gestionarea cookie-urilor</h3>
+<p>Puteți controla și/sau șterge cookie-urile din setările browserului dumneavoastră. Dezactivarea cookie-urilor esențiale poate afecta funcționalitatea site-ului.</p>
+<p>Instrucțiuni pentru principalele browsere:</p>
+<ul><li><strong>Chrome:</strong> Setări → Confidențialitate și securitate → Cookie-uri</li><li><strong>Firefox:</strong> Opțiuni → Confidențialitate și securitate</li><li><strong>Edge:</strong> Setări → Confidențialitate, căutare și servicii</li><li><strong>Safari:</strong> Preferințe → Confidențialitate</li></ul>
+<h3>5. Consimțământul</h3>
+<p>La prima vizitare a site-ului, vi se prezintă un banner prin care puteți alege să acceptați cookie-urile sau să utilizați doar cele esențiale. Preferința dumneavoastră este memorată timp de 1 an.</p>
+<p class="legal-updated">Ultima actualizare: mai 2025</p>`
+  },
+  termeni:{
+    title:"Termeni și Condiții de Utilizare",
+    badge:"Regulamentul site-ului",
+    body:`<h3>1. Informații generale</h3>
+<p>Prezentul site aparține Cabinetului de Avocat Petrescu Angela-Mihaela, cu sediul în Mun. Deva, Bld. 1 Decembrie 1918, Nr. 19, Et. 1, Jud. Hunedoara, înscrisă în Baroul Hunedoara.</p>
+<h3>2. Acceptarea termenilor</h3>
+<p>Prin accesarea și utilizarea acestui site, acceptați în mod tacit prezentele Termeni și Condiții. Dacă nu sunteți de acord, vă rugăm să nu utilizați site-ul.</p>
+<h3>3. Scopul site-ului</h3>
+<p>Site-ul are scop informativ și de prezentare a serviciilor juridice oferite de Cabinet. Informațiile publicate (articole, modele de acte) au caracter orientativ general și <strong>nu constituie consultanță juridică</strong> pentru un caz specific.</p>
+<h3>4. Limitarea răspunderii</h3>
+<p>Modelele de acte și articolele juridice publicate pe site sunt orientative și nu înlocuiesc consultanța unui avocat. Cabinetul nu răspunde pentru prejudiciile cauzate de utilizarea necorespunzătoare a modelelor de acte fără consultarea prealabilă a unui specialist.</p>
+<p>Utilizarea oricărui model de act de pe acest site se face pe propria răspundere a utilizatorului.</p>
+<h3>5. Proprietate intelectuală</h3>
+<p>Conținutul site-ului (texte, articole, design, modele de acte) este proprietatea Cabinetului de Avocat Petrescu Angela-Mihaela. Reproducerea parțială sau totală fără acordul scris al Cabinetului este interzisă, cu excepția modelelor de acte puse la dispoziție în scop de utilizare personală.</p>
+<h3>6. Formularul de programare</h3>
+<p>Completarea formularului de programare nu reprezintă constituirea unui raport juridic de asistență sau reprezentare. Raportul juridic se naște exclusiv prin semnarea unui contract de asistență juridică. Informațiile transmise prin formular sunt confidențiale și sunt utilizate exclusiv în scopul gestionării cererii de programare.</p>
+<h3>7. Linkuri externe</h3>
+<p>Site-ul poate conține linkuri către site-uri externe. Cabinetul nu răspunde pentru conținutul sau practicile de confidențialitate ale site-urilor terțe.</p>
+<h3>8. Modificarea termenilor</h3>
+<p>Cabinetul își rezervă dreptul de a modifica oricând prezentele Termeni și Condiții. Modificările intră în vigoare la data publicării pe site.</p>
+<h3>9. Legislație aplicabilă</h3>
+<p>Prezentele Termeni și Condiții sunt guvernate de legislația română. Orice litigiu se va soluționa pe cale amiabilă sau, în caz contrar, de instanțele judecătorești competente din România.</p>
+<p class="legal-updated">Ultima actualizare: mai 2025</p>`
+  }
+};
+
+function openLegal(type){
+  var doc=legalDocs[type];
+  document.getElementById('legal-body').innerHTML='<div class="legal-badge">'+doc.badge+'</div><h2>'+doc.title+'</h2><div class="legal-bar"></div>'+doc.body;
+  document.getElementById('legal-overlay').classList.add('active');
+  document.body.style.overflow='hidden';
+}
+function closeLegal(){
+  document.getElementById('legal-overlay').classList.remove('active');
+  document.body.style.overflow='';
+}
+document.getElementById('legal-overlay').addEventListener('click',function(e){if(e.target===this)closeLegal();});
+
+// ============ COOKIES ============
+function acceptCookies(){
+  localStorage.setItem('cookieConsent','accepted');
+  document.getElementById('cookieBanner').classList.add('hidden');
+}
+function declineCookies(){
+  localStorage.setItem('cookieConsent','essential');
+  document.getElementById('cookieBanner').classList.add('hidden');
+}
+if(localStorage.getItem('cookieConsent')){
+  document.getElementById('cookieBanner').classList.add('hidden');
+}
+
+// ============ ROBOT CHECK ============
+var robotChecked = false;
+function toggleRobot(){
+  robotChecked = !robotChecked;
+  var cb = document.getElementById('robotCheckbox');
+  if(robotChecked){
+    cb.classList.add('checked');
+  } else {
+    cb.classList.remove('checked');
+  }
+}
+
+// ============ FORM ============
+function submitForm(){
+  var n=document.getElementById('f-nume').value;
+  var t=document.getElementById('f-tel').value;
+  var tip=document.getElementById('f-tip').value;
+  var gdpr=document.getElementById('f-gdpr').checked;
+  if(!n||!t||!tip){alert('Completați câmpurile obligatorii: Nume, Telefon, Tip consultație.');return;}
+  if(!gdpr){alert('Vă rugăm să bifați acordul privind prelucrarea datelor personale.');return;}
+  if(!robotChecked){alert('Vă rugăm să confirmați că nu sunteți robot.');return;}
+  document.getElementById('modal').classList.add('active');
+  ['f-nume','f-tel','f-email','f-client','f-tip','f-domeniu','f-data','f-desc'].forEach(function(id){var el=document.getElementById(id);if(el)el.value='';});
+  document.getElementById('f-gdpr').checked=false;
+  robotChecked=false;
+  document.getElementById('robotCheckbox').classList.remove('checked');
+}
+
+// ============ CHATBOT ============
+var chatOpen = false;
+var chatState = 'start';
+
+function toggleChat(){
+  chatOpen = !chatOpen;
+  var w = document.getElementById('chatWindow');
+  var badge = document.getElementById('chatBadge');
+  if(chatOpen){
+    w.classList.add('open');
+    if(badge) badge.style.display='none';
+  } else {
+    w.classList.remove('open');
+  }
+}
+
+function addMsg(text, type){
+  var msgs = document.getElementById('chatMessages');
+  var div = document.createElement('div');
+  div.className = 'msg '+type;
+  div.textContent = text;
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function showOptions(opts){
+  var container = document.getElementById('chatOptions');
+  container.innerHTML = '';
+  opts.forEach(function(opt){
+    var btn = document.createElement('button');
+    btn.className = 'chat-opt';
+    btn.textContent = opt.label;
+    btn.onclick = function(){ chatAnswer(opt.key); };
+    container.appendChild(btn);
+  });
+}
+
+function chatAnswer(key){
+  var opts = document.getElementById('chatOptions');
+  var btn = opts.querySelector('[onclick*="'+key+'"]');
+  var label = btn ? btn.textContent : key;
+  addMsg(label, 'user');
+  opts.innerHTML = '';
+
+  setTimeout(function(){
+    if(key==='programare'){
+      addMsg('Pentru programare completați formularul de pe site sau ne contactați direct:', 'bot');
+      setTimeout(function(){
+        addMsg('📞 0723 565 441\n✉️ av_petrescuangela@yahoo.com\n💬 WhatsApp: 0723 565 441', 'bot');
+        showOptions([
+          {key:'tarife', label:'💰 Informații tarife'},
+          {key:'contact', label:'📞 Date de contact'},
+          {key:'inapoi', label:'↩ Înapoi la meniu'}
+        ]);
+      }, 600);
+    } else if(key==='tarife'){
+      addMsg('Tarifele se stabilesc în funcție de complexitatea cauzei și tipul clientului. Contactați cabinetul pentru o ofertă personalizată.', 'bot');
+      setTimeout(function(){
+        addMsg('Consultațiile se desfășoară în cabinet (Deva) sau online (video/telefon). Plata se face în avans.', 'bot');
+        showOptions([
+          {key:'programare', label:'📅 Vreau să mă programez'},
+          {key:'contact', label:'📞 Date de contact'},
+          {key:'inapoi', label:'↩ Înapoi la meniu'}
+        ]);
+      }, 600);
+    } else if(key==='domenii'){
+      addMsg('Cabinetul acordă asistență juridică în: drept civil, societar, asociații și fundații, dreptul muncii, asigurări, dreptul familiei, penal, imobiliar, contencios administrativ, clauze abuzive bancare și malpraxis medical.', 'bot');
+      setTimeout(function(){
+        showOptions([
+          {key:'programare', label:'📅 Vreau să mă programez'},
+          {key:'contact', label:'📞 Date de contact'},
+          {key:'inapoi', label:'↩ Înapoi la meniu'}
+        ]);
+      }, 600);
+    } else if(key==='contact'){
+      addMsg('Date de contact cabinet:', 'bot');
+      setTimeout(function(){
+        addMsg('📞 0723 565 441 (mobil)\n📠 0254 267 893 (fax/fix)\n✉️ av_petrescuangela@yahoo.com\n📍 Bld. 1 Decembrie 1918, nr. 19, Et. 1, Deva\n🕐 Luni-Joi: 9-17:30 | Vineri: 9-15', 'bot');
+        showOptions([
+          {key:'programare', label:'📅 Vreau să mă programez'},
+          {key:'inapoi', label:'↩ Înapoi la meniu'}
+        ]);
+      }, 600);
+    } else if(key==='urgenta'){
+      addMsg('Pentru situații urgente sunați direct la:', 'bot');
+      setTimeout(function(){
+        addMsg('📞 0723 565 441\n\nSau trimiteți un mesaj WhatsApp și veți fi contactat cât mai curând posibil.', 'bot');
+        showOptions([
+          {key:'programare', label:'📅 Programare urgentă'},
+          {key:'inapoi', label:'↩ Înapoi la meniu'}
+        ]);
+      }, 600);
+    } else if(key==='inapoi'){
+      addMsg('Cu ce altceva vă pot ajuta?', 'bot');
+      showOptions([
+        {key:'programare', label:'📅 Vreau să mă programez'},
+        {key:'tarife', label:'💰 Informații tarife'},
+        {key:'domenii', label:'⚖️ Domenii de activitate'},
+        {key:'contact', label:'📞 Date de contact'},
+        {key:'urgenta', label:'🚨 Situație urgentă'}
+      ]);
+    }
+  }, 400);
+}
+
+function sendChat(){
+  var input = document.getElementById('chatInput');
+  var text = input.value.trim();
+  if(!text) return;
+  addMsg(text, 'user');
+  input.value = '';
+  var tl = text.toLowerCase();
+  setTimeout(function(){
+    if(tl.includes('program') || tl.includes('program')){
+      chatAnswer('programare');
+    } else if(tl.includes('tarif') || tl.includes('pret') || tl.includes('cost') || tl.includes('lei')){
+      chatAnswer('tarife');
+    } else if(tl.includes('contact') || tl.includes('telefon') || tl.includes('adresa')){
+      chatAnswer('contact');
+    } else if(tl.includes('domeniu') || tl.includes('civil') || tl.includes('penal') || tl.includes('divort')){
+      chatAnswer('domenii');
+    } else if(tl.includes('urgent') || tl.includes('urgent')){
+      chatAnswer('urgenta');
+    } else {
+      addMsg('Vă mulțumesc pentru mesaj. Pentru informații detaliate vă recomand să ne contactați direct la 0723 565 441 sau av_petrescuangela@yahoo.com', 'bot');
+      setTimeout(function(){
+        showOptions([
+          {key:'programare', label:'📅 Vreau să mă programez'},
+          {key:'contact', label:'📞 Date de contact'},
+          {key:'urgenta', label:'🚨 Situație urgentă'}
+        ]);
+      }, 400);
+    }
+  }, 500);
+}
+</script>
+<!-- CHATBOT -->
+<div class="chat-bubble">
+  <button class="chat-btn" onclick="toggleChat()" id="chatBtn">
+    💬
+    <span class="chat-badge" id="chatBadge">1</span>
+  </button>
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar">⚖️</div>
+        <div>
+          <h4>Asistent Cabinet Petrescu</h4>
+          <p>● Online acum</p>
+        </div>
+      </div>
+      <button class="chat-close" onclick="toggleChat()">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="msg bot">Bună ziua! 👋 Sunt asistentul virtual al Cabinetului de Avocat Petrescu Angela-Mihaela. Cu ce vă pot ajuta?</div>
+    </div>
+    <div class="chat-options" id="chatOptions">
+      <button class="chat-opt" onclick="chatAnswer('programare')">📅 Vreau să mă programez</button>
+      <button class="chat-opt" onclick="chatAnswer('tarife')">💰 Informații tarife</button>
+      <button class="chat-opt" onclick="chatAnswer('domenii')">⚖️ Domenii de activitate</button>
+      <button class="chat-opt" onclick="chatAnswer('contact')">📞 Date de contact</button>
+      <button class="chat-opt" onclick="chatAnswer('urgenta')">🚨 Situație urgentă</button>
+    </div>
+    <div class="chat-input-area">
+      <input class="chat-input" id="chatInput" placeholder="Scrieți întrebarea..." onkeydown="if(event.key==='Enter')sendChat()">
+      <button class="chat-send" onclick="sendChat()">➤</button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+}
+</script>
+</body>
+</html>
