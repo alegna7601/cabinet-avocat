@@ -15,58 +15,21 @@ collections:
     label_singular: "Articol"
     folder: "_articole"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    summary: "{{title}} — {{date}}"
+    slug: "{{slug}}"
     fields:
-      - { label: "Titlu", name: "title", widget: "string", hint: "Titlul articolului" }
-      - { label: "Data publicării", name: "date", widget: "datetime", format: "DD.MM.YYYY", date_format: "DD.MM.YYYY", time_format: false }
-      - label: "Categorie"
-        name: "categorie"
-        widget: "select"
-        options:
-          - { label: "Drept civil", value: "Drept civil" }
-          - { label: "Dreptul familiei", value: "Dreptul familiei" }
-          - { label: "Drept penal", value: "Drept penal" }
-          - { label: "Drept societar", value: "Drept societar" }
-          - { label: "Dreptul muncii", value: "Dreptul muncii" }
-          - { label: "Credit bancar", value: "Credit bancar" }
-          - { label: "Malpraxis medical", value: "Malpraxis medical" }
-          - { label: "Drept imobiliar", value: "Drept imobiliar" }
-          - { label: "Contencios administrativ", value: "Contencios administrativ" }
-          - { label: "Asigurări", value: "Asigurări" }
-          - { label: "Asociații și fundații", value: "Asociații și fundații" }
-          - { label: "General", value: "General" }
-      - { label: "Rezumat (preview)", name: "rezumat", widget: "text", hint: "Scurt rezumat afișat pe pagina principală (max 200 caractere)" }
-      - { label: "Conținut articol", name: "body", widget: "markdown", hint: "Conținutul complet al articolului" }
-      - { label: "Publicat", name: "publicat", widget: "boolean", default: true }
+      - {label: "Titlu", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "string", default: "01.06.2026"}
+      - {label: "Categorie", name: "categorie", widget: "string"}
+      - {label: "Rezumat", name: "rezumat", widget: "text"}
+      - {label: "Continut", name: "body", widget: "markdown"}
 
   - name: "anunturi"
-    label: "Anunțuri"
-    label_singular: "Anunț"
+    label: "Anunturi"
+    label_singular: "Anunt"
     folder: "_anunturi"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Titlu", name: "title", widget: "string" }
-      - { label: "Data", name: "date", widget: "datetime", format: "DD.MM.YYYY", date_format: "DD.MM.YYYY", time_format: false }
-      - label: "Tip anunț"
-        name: "tip"
-        widget: "select"
-        options:
-          - { label: "Informare", value: "info" }
-          - { label: "Important", value: "important" }
-          - { label: "Urgent", value: "urgent" }
-      - { label: "Text anunț", name: "body", widget: "markdown" }
-      - { label: "Publicat", name: "publicat", widget: "boolean", default: true }
-
-  - name: "modele_acte"
-    label: "Modele de acte"
-    label_singular: "Model act"
-    folder: "_modele"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Denumire act", name: "title", widget: "string" }
-      - { label: "Descriere scurtă", name: "descriere", widget: "string" }
-      - { label: "Conținut act (text)", name: "body", widget: "markdown" }
-      - { label: "Publicat", name: "publicat", widget: "boolean", default: true }
+      - {label: "Titlu", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "string"}
+      - {label: "Text", name: "body", widget: "markdown"}
