@@ -586,11 +586,37 @@ function submitForm(){
   if(!n||!t||!tip){alert('Completați câmpurile obligatorii: Nume, Telefon, Tip consultație.');return;}
   if(!gdpr){alert('Vă rugăm să bifați acordul privind prelucrarea datelor personale.');return;}
   if(!robotChecked){alert('Vă rugăm să confirmați că nu sunteți robot.');return;}
-  document.getElementById('modal').classList.add('active');
-  ['f-nume','f-tel','f-email','f-client','f-tip','f-domeniu','f-data','f-desc'].forEach(function(id){var el=document.getElementById(id);if(el)el.value='';});
-  document.getElementById('f-gdpr').checked=false;
-  robotChecked=false;
-  document.getElementById('robotCheckbox').classList.remove('checked');
+
+  // Trimite datele la Formspree
+  var formData = {
+    nume: n,
+    telefon: t,
+    email: document.getElementById('f-email').value,
+    tip_client: document.getElementById('f-client').value,
+    tip_consultatie: tip,
+    domeniu: document.getElementById('f-domeniu').value,
+    data_preferata: document.getElementById('f-data').value,
+    descriere: document.getElementById('f-desc').value,
+    _subject: 'Cerere programare: ' + tip + ' - ' + n
+  };
+
+  fetch('https://formspree.io/f/mvznpggr', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+    body: JSON.stringify(formData)
+  }).then(function(response){
+    if(response.ok){
+      document.getElementById('modal').classList.add('active');
+      ['f-nume','f-tel','f-email','f-client','f-tip','f-domeniu','f-data','f-desc'].forEach(function(id){var el=document.getElementById(id);if(el)el.value='';});
+      document.getElementById('f-gdpr').checked=false;
+      robotChecked=false;
+      document.getElementById('robotCheckbox').classList.remove('checked');
+    } else {
+      alert('A apărut o eroare. Vă rugăm să ne contactați direct la 0723 565 441.');
+    }
+  }).catch(function(){
+    alert('A apărut o eroare de conexiune. Vă rugăm să ne contactați direct la 0723 565 441.');
+  });
 }
 
 // ============ CHATBOT ============
