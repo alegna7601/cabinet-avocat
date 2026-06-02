@@ -587,23 +587,23 @@ function submitForm(){
   if(!gdpr){alert('Vă rugăm să bifați acordul privind prelucrarea datelor personale.');return;}
   if(!robotChecked){alert('Vă rugăm să confirmați că nu sunteți robot.');return;}
 
-  // Trimite datele la Formspree
-  var formData = {
-    nume: n,
-    telefon: t,
-    email: document.getElementById('f-email').value,
-    tip_client: document.getElementById('f-client').value,
-    tip_consultatie: tip,
-    domeniu: document.getElementById('f-domeniu').value,
-    data_preferata: document.getElementById('f-data').value,
-    descriere: document.getElementById('f-desc').value,
-    _subject: 'Cerere programare: ' + tip + ' - ' + n
-  };
+  // Trimite datele la Formspree folosind FormData
+  var fd = new FormData();
+  fd.append('nume', n);
+  fd.append('telefon', t);
+  fd.append('email', document.getElementById('f-email').value);
+  fd.append('tip_client', document.getElementById('f-client').value);
+  fd.append('tip_consultatie', tip);
+  fd.append('domeniu', document.getElementById('f-domeniu').value);
+  fd.append('data_preferata', document.getElementById('f-data').value);
+  fd.append('descriere', document.getElementById('f-desc').value);
+  fd.append('_subject', 'Cerere programare: ' + tip + ' - ' + n);
+  fd.append('_replyto', document.getElementById('f-email').value);
 
   fetch('https://formspree.io/f/mvznpggr', {
     method: 'POST',
-    headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-    body: JSON.stringify(formData)
+    body: fd,
+    headers: {'Accept': 'application/json'}
   }).then(function(response){
     if(response.ok){
       document.getElementById('modal').classList.add('active');
@@ -612,9 +612,13 @@ function submitForm(){
       robotChecked=false;
       document.getElementById('robotCheckbox').classList.remove('checked');
     } else {
+      response.json().then(function(data){
+        console.log('Formspree error:', data);
+      });
       alert('A apărut o eroare. Vă rugăm să ne contactați direct la 0723 565 441.');
     }
-  }).catch(function(){
+  }).catch(function(err){
+    console.log('Fetch error:', err);
     alert('A apărut o eroare de conexiune. Vă rugăm să ne contactați direct la 0723 565 441.');
   });
 }
